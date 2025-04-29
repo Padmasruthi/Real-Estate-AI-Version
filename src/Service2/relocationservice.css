@@ -1,0 +1,120 @@
+/* ===== Complete Root Variables ===== */
+/* :root {
+    --primary-yellow: #FFEB53;
+    --primary-brown: #2C241E;
+    --light-bg: #f9f4f0;
+    --gold-accent: #94792F;
+    --gray-text: #A7A7A7;
+    --dark-gray: #4A4A4A;
+    --text-light: #FFFFFF;
+    --text-dark: #626051;
+    --transition: all 0.3s ease-in-out;
+  } */
+  
+  /* ===== Service2 Hero Section ===== */
+  .service2-hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  .service2-hero-column {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .service2-hero-head {
+    font-family: var(--font-primary); /* Now using your design system variable */
+    color: var(--text-dark);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin: 0 auto;
+    padding-top: 15vh;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  }
+  
+  /* ===== Service2 Content Section ===== */
+  .service2-content-section {
+    padding: 5rem 0;
+  }
+  
+  .service2-divider {
+    width: 60px;
+    height: 4px;
+    background-color: var( --bronze-accent);
+    border: none;
+    opacity: 1;
+    margin: 0;
+  }
+  
+  .service2-section-title {
+    color: var(--bronze-accent);
+    font-family: var(--font-primary); /* Now using your design system variable */
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+  }
+  
+  .service2-text {
+    color: var(--gray-text);
+    font-family: var(--font-primary); /* Now using your design system variable */
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    line-height: 1.7;
+  }
+  
+  .service2-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+    transition: var(--transition);
+  }
+  
+  .service2-image:hover {
+    transform: scale(1.02);
+  }
+  
+  /* ===== Responsive Adjustments ===== */
+  @media (max-width: 991.98px) {
+    .service2-hero-head {
+      padding-top: 10vh;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .service2-hero-section {
+      height: 70vh;
+      min-height: 500px;
+    }
+    
+    .service2-content-section {
+      padding: 2rem 0 !important;
+    }
+    
+    .service2-text {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .service2-content-section .row{
+      flex-direction: column-reverse;
+    }
+    .service2-hero-section {
+      height: 60vh;
+      min-height: 400px;
+    }
+    
+    .service2-hero-head {
+      font-size: 28px;
+      padding-top: 14vh;
+    }
+    
+    .service2-divider {
+      width: 40px;
+    }
+    .service2-image{
+      max-width: 96%;
+    }
+  }

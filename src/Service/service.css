@@ -1,0 +1,126 @@
+
+
+/* ===== Service Hero Section ===== */
+.service-hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  
+  .service-hero-column {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .service-hero-head {
+    font-family: var(--font-primary); /* Now using your design system variable */
+    color: var(--text-dark);
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    margin: 0 auto;
+    padding-top: 20vh;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ===== Service Content Section ===== */
+  
+  .service-divider {
+    width: 60px;
+    height: 4px;
+    background-color: var(--bronze-accent);
+    border: none;
+    opacity: 1;
+    margin: 0;
+  }
+  
+  .service-section-title {
+    color: var(--bronze-accent);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-family: var(--font-primary); /* Now using your design system variable */
+  }
+  
+  .service-text {
+    color: var(--gray-text);
+    font-family: var(--font-primary); /* Now using your design system variable */
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    line-height: 1.6;
+  }
+  
+  .service-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+  }
+  
+  /* ===== Responsive Adjustments ===== */
+  @media (max-width: 991.98px) {
+    .service-hero-head {
+      padding-top: 10vh;
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 768px) {
+    .service-hero-section {
+      height: 70vh;
+      min-height: 500px;
+      background-position: unset !important;
+    }
+    .service-hero-head{
+      padding-top: 18vh;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .service-hero-section {
+      height: 70vh;
+      min-height: 500px;
+      background-position: unset !important;
+
+    }
+
+    
+    .service-content-section {
+      /* padding: 3rem 0; */
+      padding-bottom: 0px !important;
+    }
+    
+    .service-text {
+      font-size: 1.2rem;
+    }
+    .service-content-section .row{
+      flex-direction: column-reverse !important;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .service-content-section .row{
+      flex-direction: column-reverse !important;
+    }
+    .service-hero-section {
+      height: 60vh;
+      min-height: 400px;
+      background-position: unset !important;
+    }
+    
+    .service-hero-head {
+      font-size: 21px;
+      padding-top: 11vh;
+    }
+    .service-content-section {
+      /* padding: 3rem 0; */
+      padding-bottom: 0px !important;
+    }
+    
+    .service-image{
+      display: block;
+      margin: 0 auto;
+      max-width: 75%;
+    }
+    .service-divider {
+      width: 40px;
+    }
+  }

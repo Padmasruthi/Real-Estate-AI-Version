@@ -1,0 +1,133 @@
+/* ===== About Hero Section ===== */
+.about-hero-section {
+  position: relative;
+  height: 60vh;
+  min-height: 630px;
+  background: url("../assets/images/aboutusbg.svg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.about-hero-head {
+  color: var(--text-dark);
+  font-family: var(--font-primary); /* Now using your design system variable */
+  /* font-size: clamp(2.5rem, 6vw, 5rem); */
+  font-size: 70px;
+  margin: 0 auto;
+  /* padding-top: 15vh; */
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); */
+}
+
+.about-title {
+  /* color: var(--gold-accent); */
+  font-family: var(--font-primary); /* Now using your design system variable */
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.about-subtitle {
+  color: var( --bronze-accent);
+  font-size: 22px;
+}
+
+.about-divider {
+  width: 120px;
+  height: 3px;
+  background-color: var( --bronze-accent);
+  border: none;
+  border-radius: 3px;
+  opacity: 1;
+  margin: 0;
+}
+
+.about-section-title {
+  color: var( --bronze-accent);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.about-text {
+  color: var(--medium-gray);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+}
+
+/* ===== Full Width Section ===== */
+.full-width-section {
+  margin: 5rem 0;
+}
+
+/* ===== Responsive Adjustments ===== */
+
+@media (max-width: 1200px) {
+  .about-title {
+    font-size: 32px;
+  }
+  .about-subtitle {
+    font-size: 20px;
+  }
+  .about-section{
+    padding-bottom: 0rem !important;
+  }
+  .about-image{
+    max-width: 95%;
+  }
+}
+@media (max-width: 767.98px) {
+  .about-hero-section {
+    height: 50vh;
+    min-height: 400px;
+  }
+  
+  .about-hero-head {
+    padding-top: 10vh;
+  }
+  .about-image{
+    max-width: 75% !important;
+  }
+  
+  .about-content {
+    margin-top: 2rem;
+  }
+  .about-title {
+    font-size: 28px;
+  }
+  .about-subtitle {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 575.98px) {
+  .about-hero-section {
+    height: 40vh;
+    min-height: 300px;
+  }
+  
+  .about-hero-head {
+    font-size: 2rem;
+    padding-top: 3vh;
+  }
+  .about-image{
+    max-width: 75% !important;
+  }
+  
+  .about-divider {
+    width: 40px;
+  }
+  .about-title {
+    font-size: 23px;
+  }
+  .about-subtitle {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,571 @@
+/* ===== Hero Section ===== */
+.home-section {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background: url("../assets/images/Group\ 327.png") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.homepage-head {
+  color: var(--text-dark);
+  font-size: 55px;
+  margin: 0 auto;
+  padding-top: 5vh;
+  max-width: 90%;
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); */
+  /* font-weight: 700; */
+}
+
+.homepage-subhead {
+  color: var(--dark-gray);
+  font-size: 22px;
+  margin: 16px auto;
+  max-width: 90%;
+  font-weight: 400;
+}
+
+/* ===== About Section ===== */
+.real-estate-consulting-section {
+  background-color: var(--primary-brown);
+  /* padding: 80px 0; */
+}
+
+.consulting-head {
+  color: var(--primary-yellow);
+  font-family: var(--font-primary);
+  /* Now using your design system variable */
+  font-size: 40px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.head-line {
+  border-top: 4px solid var(--text-light);
+  width: 150px;
+  margin: 3px 0 32px;
+  opacity: 0.8;
+}
+
+.consulting-subhead {
+  color: var(--text-light);
+  font-family: var(--font-primary);
+  /* Now using your design system variable */
+
+  font-size: 29px;
+  margin-bottom: 24px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.consulting-para {
+  color: var(--medium-gray);
+  font-family: var(--font-primary);
+  /* Now using your design system variable */
+  font-size: 22px;
+  margin-bottom: 32px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.read-more {
+  color: var(--primary-yellow);
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 16px;
+  transition: var(--transition);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.img-street {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Restaurant Section */
+.restuarant-section {
+  background-color: var(--primary-brown);
+}
+
+/* Content Column */
+.content-col {
+  background-color: var(--primary-brown);
+}
+
+/* Image Column */
+.image-col {
+  height: 100%;
+}
+
+.image-col img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Restaurant Paragraph */
+.restaurant-para {
+  color: var(--text-light);
+  font-family: var(--font-primary);
+  font-size: clamp(16px, 1.8vw, 22px);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1.5rem;
+  font-weight: 400;
+}
+
+/* Coffee Container */
+.coffee-container {
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+.coffee-container img {
+  /* max-width: 1300px; */
+  /* min-width: 700px; */
+  /* min-height: 151px; */
+  /* height: auto; */
+}
+.vienna-building{
+  height: 100% !important;
+}
+
+/* Mobile View */
+.restaurant-mobile {
+  background-color: var(--primary-brown);
+}
+
+.content-col-mobile {
+  background-color: var(--primary-brown);
+}
+
+.image-col-mobile img {
+  width: 100%;
+  height: auto;
+}
+
+.coffee-container-mobile {
+  margin-top: 2rem;
+}
+
+.coffee-container-mobile img {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ===== Services Section ===== */
+.services-container {
+  background-color: var(--light-bg);
+  padding: 80px 0;
+}
+
+.our-services {
+  color: var(--gold-accent);
+  font-family: var(--font-primary);
+  /* Now using your design system variable */
+  font-size: 35px;
+  margin-bottom: 16px;
+  /* font-weight: 700; */
+}
+
+.services-text {
+  color: var(--gray-text);
+  font-family: var(--font-primary);
+  font-size: 29px;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+
+/* Building Cards */
+.building-container{
+  gap: 8vh !important;
+}
+.building-card {
+  margin-bottom: 32px;
+  transition: var(--transition);
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.building-card:hover {
+  transform: translateY(-5px);
+}
+
+.building-card img {
+  width: 100% !important;
+  /* height: 200px; */
+  object-fit: cover;
+  /* border-radius: 8px; */
+  transition: var(--transition);
+}
+
+/* Mobile Slider */
+.mobile-slider-container {
+  position: relative;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.mobile-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.mobile-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  scroll-snap-align: start;
+  flex: 0 0 85%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.4); */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  text-align: center;
+}
+
+.overlay h3 {
+  color: var(--text-light);
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.overlay a {
+  color: var(--primary-yellow);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: var(--transition);
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 1199.98px) {
+  .restaurant-para {
+    font-size: clamp(16px, 1.6vw, 20px);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+@media (max-width: 991.98px) {
+  .homepage-head {
+    font-size: 35px;
+  }
+
+  .consulting-head,
+  .our-services {
+    font-size: 28px;
+  }
+
+  .consulting-subhead,
+  .services-text {
+    font-size: 24px;
+  }
+  .consulting-para{
+    font-size: 20px;
+  }
+
+  .restaurant-para {
+    font-size: clamp(15px, 1.8vw, 18px);
+  }
+  
+  .coffee-container {
+    padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-section {
+    min-height: 500px;
+    padding-top: 70px;
+  }
+
+  .homepage-head {
+    font-size: 26px;
+    padding-top: 0vh;
+  }
+
+  .homepage-subhead {
+    font-size: 16px;
+    padding-bottom: 5vh;
+  }
+
+  .real-estate-consulting-section,
+  .restuarant-section {
+    padding: 5px 0;
+  }
+
+  .consulting-head,
+  .our-services {
+    font-size: 24px;
+  }
+
+  .consulting-subhead,
+  .services-text {
+    font-size: 18px;
+  }
+
+  .consulting-para,
+  .restaurant-para {
+    font-size: 16px;
+  }
+
+  .slide {
+    flex: 0 0 90%;
+  }
+  .restaurant-para {
+    font-size: 16px;
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .coffee-container-mobile {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home-section {
+    min-height: 400px;
+  }
+
+  .homepage-head {
+    font-size: 22px;
+    padding-top: 0vh;
+    margin-top: 18px !important;
+  }
+
+  .homepage-subhead {
+    font-size: 14px;
+    padding-bottom: 3vh;
+  }
+
+  .head-line {
+    width: 100px;
+    margin: 8px 0 16px;
+  }
+
+  .coffee-container {
+    justify-content: center;
+  }
+
+  .real-estate-consulting-section,
+  .restuarant-section {
+    margin-top: 4px !important;
+  }
+  .consulting-mobile .consulting-mobile-column, .restuarant-section-mobile .col-12{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .consulting-content-section-mobile{
+    padding: 17px;
+  }
+  .services-text{
+    margin-bottom: 0px;
+  }
+  .consulting-para{
+    margin-bottom: 3px;
+  }
+
+  .overlay h3 {
+    font-size: 19px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .mobile-slider-container {
+    padding: 0 20px;
+  }
+  .restaurant-para {
+    font-size: 15px;
+    padding-left: 1rem;
+  }
+  
+  .content-col-mobile {
+    padding: 1.5rem;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .home-section {
+    min-height: 450px; 
+    padding-top: 60px;
+  }
+
+  .homepage-head {
+    font-size: 24px; 
+    margin-top: 15px !important; 
+  }
+
+  .homepage-subhead {
+    font-size: 15px;
+    padding-bottom: 4vh; 
+  }
+
+  .real-estate-consulting-section,
+  .restuarant-section {
+    margin-top: 8px !important;
+    padding: 8px 0; 
+  }
+
+  .consulting-head,
+  .our-services {
+    font-size: 26px;
+  }
+
+  .consulting-subhead,
+  .services-text {
+    font-size: 19px;
+    margin-bottom: 2px; 
+  }
+
+  .coffee-container{
+    justify-content: center !important;
+  }
+  .head-line {
+    width: 120px; 
+    margin: 10px 0 18px; 
+  }
+
+  .consulting-content-section-mobile {
+    padding: 20px;
+  }
+.overlay{
+  background-color: none !important;
+}
+  .overlay h3 {
+    font-size: 18px; 
+  }
+  .mobile-slider{
+    justify-content: center !important;
+  }
+}
+
+/* ===== Animation Keyframes ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Print Styles ===== */
+@media print {
+  .home-section {
+    height: auto;
+    background: none !important;
+  }
+
+  .homepage-head,
+  .consulting-head,
+  .consulting-subhead,
+  .our-services {
+    color: #000 !important;
+  }
+
+  .arrow,
+  .mobile-slider-container {
+    display: none !important;
+  }
+
+  .building-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}

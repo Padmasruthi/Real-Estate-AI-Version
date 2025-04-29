@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+
+
+
+/* ===== Base Styles ===== */
+:root {
+  --primary-yellow: #FFEB53;
+  --primary-brown: #2C241E;
+  --light-bg: #f9f4f0;
+  --gold-accent: #94792F;
+  --gray-text: #A7A7A7;
+  --medium-gray: #898989;
+  --dark-gray: #4A4A4A;
+  --text-light: #FFFFFF;
+  --text-dark: #626051;
+  --transition: all 0.3s ease-in-out;
+  --bronze-accent: #C78960;
+
+    /* Fonts */
+    --font-primary: 'Unna', serif;
+
+}
+  
+  /* body {
+    font-family: 'Unna', serif;
+    overflow-x: hidden;
+  } */
+  
+  /* ===== Utility Classes ===== */
+  .text-warning {
+    color: var(--primary-yellow) !important;
+  }
+  
+  .bg-dark-brown {
+    background-color: var(--primary-brown);
+  }
+  
+  .bg-light {
+    background-color: var(--light-bg);
+  }

@@ -1,0 +1,90 @@
+/* service1.css */
+/* :root {
+    --primary-yellow: #FFEB53;
+    --primary-brown: #2C241E;
+    --light-bg: #f9f4f0;
+    --gold-accent: #94792F;
+    --gray-text: #A7A7A7;
+    --dark-gray: #4A4A4A;
+    --text-light: #FFFFFF;
+    --text-dark: #626051;
+  } */
+  
+  .service1-container {
+    overflow-x: hidden;
+  }
+  
+  .service1-hero-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .service1-hero-head {
+    color: var(--text-dark);
+    font-family: var(--font-primary); /* Now using your design system variable */
+    padding-bottom: 50vh;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .service1-divider {
+    width: 60px;
+    height: 4px;
+    background-color: var( --bronze-accent);
+    border: none;
+    opacity: 1;
+    margin: 0;
+  }
+  
+  .service1-section-title {
+    color: var(--bronze-accent);
+    font-family: var(--font-primary); /* Now using your design system variable */
+    font-size: 1.5rem;
+  }
+  
+  .service1-text {
+    color: var(--gray-text);
+    font-family: var(--font-primary); /* Now using your design system variable */
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    line-height: 1.6;
+  }
+  
+  .service1-image {
+    border-radius: 8px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .service1-hero-head {
+      font-size: 2.5rem;
+      padding-top: 8vh;
+    }
+    
+    .service1-content-section {
+      padding: 2rem 0;
+    }
+    .service1-content-section{
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    .service1-content-section .row{
+      flex-direction: column-reverse;
+    }
+    .service1-image{
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+    .service1-hero-head{
+      font-size: 26px;
+    }
+  }
