@@ -1,3 +1,11 @@
+
+:root {
+  font-family: 'Unna', serif;
+}
+body {
+  font-family: inherit;
+}
+
 .App {
   text-align: center;
 }
@@ -6,6 +14,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+/* 
+html, body{
+  overflow-x: hidden !important;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
